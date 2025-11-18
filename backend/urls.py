@@ -46,5 +46,6 @@ urlpatterns = [
     path('api/booking-stats/', views.booking_stats, name='booking_stats'),
     path('api/user/', views.get_user, name='get_user'),
     path('api/analytics/summary/', analytics_summary, name='analytics_summary'),
+    path('api/track/', views.track_visit, name='track-visit'),
 ]
 
