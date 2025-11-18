@@ -16,8 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from bookings import views
-from bookings.views import CustomTokenView
+from ..bookings import views
+from analytics.views import analytics_summary
+from ..bookings.views import CustomTokenView
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
@@ -44,5 +45,6 @@ urlpatterns = [
     # --- Stats & User ---
     path('api/booking-stats/', views.booking_stats, name='booking_stats'),
     path('api/user/', views.get_user, name='get_user'),
+    path('api/analytics/summary/', analytics_summary, name='analytics_summary'),
 ]
 

@@ -43,9 +43,13 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'bookings.apps.BookingsConfig',
+    'analytics',
 ]
 
+
+
 MIDDLEWARE = [
+    'analytics.middleware.AnalyticsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',  # 👈 Move it here
