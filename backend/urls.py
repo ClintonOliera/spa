@@ -17,12 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from bookings import views
-from analytics.views import analytics_summary
+from analytics.views import analytics_summary, track_visit
 from bookings.views import CustomTokenView
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
