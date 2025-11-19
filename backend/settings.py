@@ -10,13 +10,13 @@ DEBUG = True   # ❗ Recommended for Render (security)
                 # If still debugging, set to True temporarily
 
 ALLOWED_HOSTS = [
-    'lavylotus-massage.onrender.com',
+    'lavylotus.onrender.com',
     'localhost',
     '127.0.0.1'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://lavylotus-massage.onrender.com',
+    'https://lavylotus.onrender.com',
     'http://localhost:5050'
 ]
 
@@ -62,7 +62,7 @@ MIDDLEWARE = [
 # =========================
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5050",
-    "https://lavylotus-massage.onrender.com",
+    "https://lavylotus.onrender.com",
 ]
 
 CORS_ALLOW_HEADERS = ["*"]
